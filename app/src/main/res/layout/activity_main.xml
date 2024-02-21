@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="TIC TAC SUM"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/switchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:textOff="C"
+        android:textOn="R"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/gridLayout"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toLeftOf="@id/switchButton"
+        android:text="R" />
+
+    <TextView
+        android:id="@+id/C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/gridLayout"
+        android:layout_marginBottom="3dp"
+        android:layout_toRightOf="@id/switchButton"
+        android:text="C" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:columnCount="3"
+        android:elevation="4dp"
+        android:rowCount="3">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:onClick="onCellClick"
+            android:padding="20dp"
+            android:text="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:onClick="onCellClick"
+            android:padding="20dp"
+            android:text="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:onClick="onCellClick"
+            android:padding="20dp"
+            android:text="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:onClick="onCellClick"
+            android:padding="20dp"
+            android:text="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:onClick="onCellClick"
+            android:padding="20dp"
+            android:text="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:onClick="onCellClick"
+            android:padding="20dp"
+            android:text="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:onClick="onCellClick"
+            android:padding="20dp"
+            android:text="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:onClick="onCellClick"
+            android:padding="20dp"
+            android:text="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_border"
+            android:gravity="center"
+            android:onClick="onCellClick"
+            android:padding="20dp"
+            android:text="1" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/mosseCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="MOSSE EFFETTUATE: 0"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mosseCounter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/blue"
+        android:text="RESTART"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bonusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/restartButton"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/red"
+        android:text="BONUS"
+        android:textStyle="bold" />
+
+</RelativeLayout>
